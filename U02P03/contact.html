@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Inicio</title>
+
+</head>
+
+<body>
+    <!-- Encabezado -->
+    <header>
+        <h1>E-Sports</h1>
+    </header>
+    <div class="container">
+        <!-- Navegación / cotenedor izquierdo -->
+        <nav>
+            <ul>
+                <li><a href="/index.html">Inicio</a></li>
+                <li><a href="/multimedia.html">Multimedia</a></li>
+                <li><a href="/contact.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <!-- Contenedor principal -->
+        <main>
+            <h2>Cuentanos algo de tí</h2>
+            <form action="/index.html" method="post">
+                <ul>
+                    <li>
+                        <label for="user">Nombre:</label>
+                        <input type="text" id="user" name="user_name" required>
+                    </li>
+                    <li>
+                        <label for="password">Email:</label>
+                        <input type="mail" id="email" name="user_mail" required>
+                    </li>
+                    <li>
+                        <label for="age">Edad:</label>
+                        <input type="number" id="number" name="user_number">
+                    </li>
+                    <li>
+                        <label for="user">Color Preferido:</label>
+                        <input type="color" id="color" name="user_color">
+                    </li>
+                    <li>
+                        <label for="user">Juego Preferido:</label>
+                        <input type="text" id="coment" name="user_coment" minlength="10">
+                    </li>
+                    <br>
+                    <button type="submit">Aceptar</button>
+
+                </ul>
+
+
+            </form>
+        </main>
+        <!-- Contenedor secundario / derecho -->
+        <div class="right">
+            <h2>Datos de interes</h2>
+            <p>Según un estudio de la compañía Newzoo: los eSports podrían llegar a superar en espectadores e ingresos
+                finales como la
+                Super Bowl o la Champions League de fútbol en menos de diez años.</p><br>
+            <audio controls>
+                <source src="/audio/League of Legends - Worlds 2021 Theme.mp3">
+                <source />
+            </audio>
+        </div>
+    </div>
+    <!-- Pie de Página-->
+    <footer>
+        <p>© Copyright Grupo 1 LC II</p>
+    </footer>
+</body>
+
+</html>
