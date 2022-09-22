@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Loto', sans-serif;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+}
+
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 0;
+    list-style: none;
+}
+
+ul a,
+ul a:link {
+    font-family: 'Loto', sans-serif;
+    text-decoration: none;
+    color: black;
+    padding: 8px;
+    display: block;
+    width: 100%;
+
+
+
+}
+
+.logo {
+
+    height: 40px;
+    width: 180px;
+}
+
+.indice {
+    align-items: flex-start;
+    display: flex;
+    background: rgba(226, 223, 223, 0.8);
+
+}
+
+.perfil {
+    height: 50px;
+    width: 50px;
+    color: black;
+}
+
+.flex-conteiner-2 {
+    display: flex;
+}
+
+.img-background {
+    height: 300px;
+    width: 650px;
+    background-size: 300%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url("/img/utn-alumnos.jpg");
+}
+
+.img-content {
+    height: 300px;
+    width: 600px;
+    padding: 3%;
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    flex-direction: column;
+}
+
+.main-image {
+    display: flex;
+}
