@@ -36,12 +36,20 @@ header {
     top: 0;
     width: 100%;
     background: var(--color-theme);
+
+
+}
+
+.index {
+    box-shadow: 5px 2px #04957d;
 }
 
 nav>ul {
     display: flex;
     justify-content: space-between;
     justify-content: center;
+
+
 }
 
 nav li {
@@ -56,12 +64,14 @@ nav li a {
     font-size: 1em;
     font-weight: bold;
     color: var(--color-active);
+    border-radius: 10px;
 }
 
 nav li.current-page a {
     color: var(--color-theme);
     background-color: var(--color-active);
     pointer-events: none;
+
 }
 
 main {
@@ -118,9 +128,6 @@ main p {
     margin-bottom: 16px;
 }
 
-p {
-    text-align: center;
-}
 
 /* Media Query: Estilos a aplicar sólo en pantallas mayores a 400px */
 @media (min-width: 400px) {
