@@ -35,19 +35,23 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-    background: var(--color-theme);
-
+    background-color: #00594C;
+    background: -moz-linear-gradient(left, #00594C 0%, #04957D 100%, #04957D 100%);
+    background: -webkit-linear-gradient(left, #00594C 0%, #04957D 100%, #04957D 100%);
+    background: linear-gradient(to right, #00594C 0%, #04957D 100%, #04957D 100%);
+    border-bottom: 2px solid var(--color-active);
+    border-radius: 0px 0px 30px 30px;
 
 }
 
-.index {
-    box-shadow: 5px 2px #04957d;
-}
 
 nav>ul {
     display: flex;
     justify-content: space-between;
     justify-content: center;
+
+
+
 
 
 }
@@ -64,7 +68,7 @@ nav li a {
     font-size: 1em;
     font-weight: bold;
     color: var(--color-active);
-    border-radius: 10px;
+    border-radius: 10px 10px 0px 0px;
 }
 
 nav li.current-page a {
@@ -86,6 +90,7 @@ h1 {
     text-align: center;
     margin: 0;
     color: white;
+
 }
 
 h1>img {
@@ -95,8 +100,10 @@ h1>img {
 
 h2 {
     color: var(--color-theme);
-    margin: 16px 0;
+    margin: 15px;
     text-align: center;
+    padding: 15px;
+
 }
 
 h3 {
@@ -117,11 +124,18 @@ footer {
     text-align: center;
     padding-top: 10px;
     padding-bottom: 10px;
+    background-color: #00594C;
+    background: -moz-linear-gradient(left, #00594C 0%, #04957D 100%, #04957D 100%);
+    background: -webkit-linear-gradient(left, #00594C 0%, #04957D 100%, #04957D 100%);
+    background: linear-gradient(to right, #00594C 0%, #04957D 100%, #04957D 100%);
+
 }
 
 footer p {
     font-size: small;
     color: white;
+
+
 }
 
 main p {
