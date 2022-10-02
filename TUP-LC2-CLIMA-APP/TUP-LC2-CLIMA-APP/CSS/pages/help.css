@@ -1,0 +1,49 @@
+#form-city-list {
+    margin: 0 auto;
+    width: 30%;
+}
+
+#form-city-list form button {
+    background-color: #00594c;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    font-weight: bold;
+    margin: 0px 2px;
+}
+
+#form-city-list form input{
+    border-radius: 5px;
+    border: solid;
+    border-width: 1.5px;
+    height: 35px;
+    width: 100%;
+}
+
+#form-city-list form textarea{
+    border-radius: 5px;
+    border: solid;
+    border-width: 1.5px;
+    width: 100%;
+}
+
+.cont-botones {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 10px;
+
+}
+
+#alert {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(212, 62, 62);
+    color: white;
+    border-radius: 15px;
+    padding-top: 15px;
+    width: 35%;
+    margin: 30px auto 20px;
+    font-size: small;
+}
