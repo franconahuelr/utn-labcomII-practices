@@ -49,11 +49,6 @@ nav>ul {
     display: flex;
     justify-content: space-between;
     justify-content: center;
-
-
-
-
-
 }
 
 nav li {
@@ -87,9 +82,12 @@ main {
 }
 
 h1 {
+    font-weight: lighter;
+    font-size: 35px;
     text-align: center;
     margin: 0;
     color: white;
+    padding-bottom: 10px;
 
 }
 
@@ -128,7 +126,7 @@ footer {
     background: -moz-linear-gradient(left, #00594C 0%, #04957D 100%, #04957D 100%);
     background: -webkit-linear-gradient(left, #00594C 0%, #04957D 100%, #04957D 100%);
     background: linear-gradient(to right, #00594C 0%, #04957D 100%, #04957D 100%);
-
+    border-top: 2px solid var(--color-active);
 }
 
 footer p {

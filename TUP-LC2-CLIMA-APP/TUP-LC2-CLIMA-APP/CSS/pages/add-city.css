@@ -1,0 +1,42 @@
+* {
+    text-align: center;
+}
+
+.alert-success,
+.alert-warning,
+.alert-danger {
+    margin: 30px 0px;
+    padding: 15px 30px 15px 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 15px;
+    color: white;
+
+
+}
+
+.alert-success {
+    background-color: green;
+
+}
+
+.alert-warning {
+    background-color: rgb(255, 174, 0);
+}
+
+.alert-danger {
+    background-color: red;
+}
+
+button {
+    margin-top: 20px;
+    padding: 12px 12px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: bold;
+    color: white;
+    border-radius: 10px;
+    background-color: #00594c;
+    border: none;
+}

@@ -27,9 +27,10 @@
     <main>
         <h2>Agregar Ciudad</h2>
         <form action="">
-            <section id="form-city-list">
-                <label for="city">Ingrese Ciudad
-                    <input type="text" class="texto-city" id="city">
+            <section id="form-city-list" class="city">
+                <label for="city">Ingrese la ciudad a agregar:
+                    <br><input type="text" class="texto-city" id="texto-city">
+                    <br>
                     <button>Agregar</button>
                 </label>
                 <!-- Sección donde se debe colocar el formulario, con el select y el
@@ -37,8 +38,15 @@
             </section>
         </form>
         <section id="section-weather-result">
+
             <!-- Sección donde se debe mostrar el clima de la ciudad -->
         </section>
+        <div class="alert-success">Ciudad agregada con éxito</div>
+
+        <div class="alert-danger">Error: La ciudad ingresada no se encuentra en la API o se produjo un error
+            al consultar </div>
+
+        <div class="alert-warning">La ciudad ingresada ya se encuentra almacenada</div>
     </main>
     <footer>
         <p>
