@@ -13,13 +13,13 @@
     <title>TUP LC2 - TP Integrador</title>
     <link rel="stylesheet" href="CSS/common.css">
     <link rel="stylesheet" href="CSS/pages/index.css">
-    <link rel="shortcut icon" href="./img/sun-and-cloud.png">
+    <link rel="shortcut icon" href="/img/sun-and-cloud.png">
 </head>
 
 <body>
     <header>
         <h1>
-            <img src="./img/sun-and-cloud.png" alt="">
+            <img src="img/sun-and-cloud.png" alt="">
             <span>Clima App</span>
         </h1>
         <nav>
@@ -35,12 +35,12 @@
         <h2>El Clima Ahora</h2>
         <section id="form-city-list">
             <form>
-                <select name="Seleccionar" class="seleccion">
+                <select id="citiesSelect" name="Seleccionar" class="seleccion">
                     <option value="" disabled selected>Seleccionar ciudad</option>
                     <option value="Rosario">Rosario</option>
                     <option value="Rafaela">Rafaela</option>
                 </select>
-                <button type="button" value="Consultar" class="consultar
+                <button onclick="consultar()" type="button" value="Consultar" class="consultar
                 "><b>Consultar</b></button>
             </form>
         </section>
@@ -62,6 +62,8 @@
             Desarrollado con ♥ - LC2
         </p>
     </footer>
+
+    <script src="js/pages/index.js"></script>
 </body>
 
 </html>
