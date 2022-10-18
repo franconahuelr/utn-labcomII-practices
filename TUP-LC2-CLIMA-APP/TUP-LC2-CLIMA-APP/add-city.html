@@ -7,7 +7,8 @@
     <title>TUP LC2 - TP Integrador</title>
     <link rel="stylesheet" href="CSS/common.css">
     <link rel="stylesheet" href="CSS/pages/add-city.css">
-    <link rel="shortcut icon" href="/img/sun-and-cloud.png">
+    <link rel="shortcut icon" href="./img/sun-and-cloud.png">
+    <script src="./JS/pages/add-city.js"></script>
 
 </head>
 
@@ -33,7 +34,7 @@
                 <label for="city">Ingrese la ciudad a agregar:
                     <br><input type="text" class="texto-city" id="texto-city">
                     <br>
-                    <button>Agregar</button>
+                    <button id="boton-guardar">Agregar</button>
                 </label>
                 <!-- Sección donde se debe colocar el formulario, con el select y el
         botón de consultar -->
@@ -44,7 +45,7 @@
             <!-- Sección donde se debe mostrar el clima de la ciudad -->
         </section>
 
-        <div class="alert-success">Ciudad agregada con éxito</div>
+        <div class="alert-success"></div>
 
         <div class="alert-danger">Error: La ciudad ingresada no se encuentra en la API o se produjo un error
             al consultar </div>
