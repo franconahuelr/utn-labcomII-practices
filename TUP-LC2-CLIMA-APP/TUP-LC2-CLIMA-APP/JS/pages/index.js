@@ -1,34 +1,34 @@
 
 
-    async function getCity(value) {
-        
-        try {
-            const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${value}&appid=b54914a753ddd99a46e09a5c522ae648&units=metric&lang=es`);
-            const json = await response.json();
-            return json;
-        } catch (error) {
-            console.log(err)
-        }
-        
-       
-      }
- 
+async function getCity(value) {
 
-function consultar(){
-    var citySelected = document.getElementById('citiesSelect');
-   var value = citySelected.value;
+    try {
+        const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${value}&appid=b54914a753ddd99a46e09a5c522ae648&units=metric&lang=es`);
+        const json = await response.json();
+        return json;
+    } catch (error) {
+        console.log(err)
+    }
 
-   getCity(value)
-   .then((response) => 
-    { 
-        console.log(response)
-        showInfo(response)})
-    .catch(err => console.log(err))
 
-   console.log(value)
 }
 
-function showInfo(data){
+
+function consultar() {
+    var citySelected = document.getElementById('citiesSelect');
+    var value = citySelected.value;
+
+    getCity(value)
+        .then((response) => {
+            console.log(response)
+            showInfo(response)
+        })
+        .catch(err => console.log(err))
+
+    console.log(value)
+}
+
+function showInfo(data) {
     const charactersDiv = document.querySelector('#section-weather-result');
     charactersDiv.innerHTML = "";
     const card = document.createElement('div');
@@ -47,8 +47,7 @@ function showInfo(data){
     const pPressure = document.createElement('p');
     pPressure.innerText = data.main.pressure
 
-    card.append(title,pTemperature,pFeelsLike,pHumidiy,pPressure);
+    card.append(title, pTemperature, pFeelsLike, pHumidiy, pPressure);
     charactersDiv.append(card)
 
 }
-    

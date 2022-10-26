@@ -1,26 +1,17 @@
-$(document).ready(function () {
-    $('#boton-guardar').click(function () {
-        /*Captura de datos escrito en los inputs*/
-        var ciudad = document.getElementById("texto-city").value;
-        /*Guardando los datos en el LocalStorage*/
-        localStorage.setItem("Ciudad", ciudad);
-        document.getElementById("alert-success").innerText = "Ciudad agregada con exito";
-    });
-});
-
-
+const form = document.getElementById("agregar-ciudades");
 
 function getCitiesFromLocalStorage() {
-    let cities = localStorage.getItem("CITIES");
-    if (cities) {
-        cities = JSON.parse(cities);
-    } else {
-        cities = [];
+    let city = document.getElementById("texto-city").value;
+
+    if (localStorage.getItem("Ciudades") == null) {
+        localStorage.setItem("Ciudades", "[]");
     }
-    return cities;
+
+    let old_cities = JSON.parse(localStorage.getItem("Ciudades"));
+
+    old_cities.push(city);
+
+    localStorage.setItem("Ciudades", JSON.stringify(old_cities));
+
 }
-function addNewCityToLocalStorage(newCity) {
-    let cities = getCitiesFromLocalStorage();
-    cities.push(newCity);
-    localStorage.setItem("CITIES", JSON.stringify(cities));
-}
+
