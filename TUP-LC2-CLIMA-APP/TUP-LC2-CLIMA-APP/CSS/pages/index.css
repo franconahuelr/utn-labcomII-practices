@@ -33,3 +33,12 @@
 
 
 }
+
+#spinner{
+    display:none; /*Para que no aparezca en principio */
+    margin-top: 40px;
+    padding-left: 110px;
+    padding-top: 5px;
+    padding-right: 15px;
+    padding-bottom: 5px;
+}

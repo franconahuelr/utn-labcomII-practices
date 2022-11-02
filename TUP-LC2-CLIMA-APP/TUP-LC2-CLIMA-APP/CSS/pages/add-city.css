@@ -15,6 +15,15 @@ button {
     border: none;
 }
 
+#result {
+    display: none;
+    padding: 20px;
+    border-radius: 35px;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
+
 .alert-success,
 .alert-warning,
 .alert-danger {
