@@ -22,19 +22,20 @@ function getCitiesFromLocalStorage() {
 
     result.style.display = "block"; //Al elemento donde se va a mostrar el mensaje del resultado, le agrego display block
 
-    if (!ifExist && city != "") {
+    if (!ifExist && city != "" && (/^[a-zA-Z]+$/.test(city))) {
         result.classList.remove('alert-warning');
         result.classList.remove('alert-danger');
         old_cities.push(city);                  //Si se cumplen las condiciones del If, pushea los valores de city al array old_cities
         result.classList.add('alert-success');
         result.innerText = "Ciudad agregada correctamente";
     }
-    else if (city == "") {
+    else if (!(/^[a-zA-Z]+$/.test(city))) {
         result.classList.remove('alert-warning');
         result.classList.remove('alert-success');
         result.classList.add('alert-danger');
-        result.innerText = "Complete los campos";
+        result.innerText = "Ciudad inválida, asegurese de que esté bien escrita e intentelo nuevamente";
     }
+
     else if (ifExist) {
         result.classList.remove('alert-danger');
         result.classList.remove('alert-success');

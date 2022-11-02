@@ -52,6 +52,10 @@ button {
     background-color: red;
 }
 
+.alert-error {
+    background-color: orange;
+}
+
 .texto-city {
     border-radius: 5px;
     border: solid;
