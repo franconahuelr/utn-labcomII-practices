@@ -37,14 +37,22 @@
     margin-bottom: 20px;
 }
 
-#alert {
+#alerta {
     display: flex;
     justify-content: center;
-    background-color: rgb(212, 62, 62);
     color: white;
     border-radius: 15px;
-    padding-top: 15px;
-    width: 35%;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    width: 100%;
     margin: 30px auto 20px;
     font-size: small;
+}
+
+.error{
+    background-color: red;
+}
+
+.valido{
+    background-color: green;
 }
