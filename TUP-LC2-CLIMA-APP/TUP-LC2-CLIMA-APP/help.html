@@ -36,24 +36,19 @@
             desde la página <a href="index.html">Clima</a>.
         </p>
         <section id="form-city-list">
-            <form action="">
+            <form >
                 <label for="">Nombre:</label><br>
-                <input type="text" class="name" id="form-name"><br>
+                <input type="text" class="name" id="form-name" required><br>
                 <label for="">Email:</label><br>
-                <input type="email" class="email" id="form-email"><br>
+                <input type="email" class="email" id="form-email" required><br>
                 <label for="">Mensaje:</label><br>
-                <textarea name="textarea" rows="10" cols="50"></textarea><br>
+                <textarea name="textarea" rows="10" cols="50" id="form-mnj" required></textarea><br>
                 <div class="cont-botones">
-                    <button>Limpiar</button>
-                    <button>Enviar</button>
+                    <button onclick="limpiar()" type="submit">Limpiar</button>
+                    <button onclick="validar(event)" type="submit">Enviar</button>
                 </div>
+                <div id="alerta"></div>
             </form>
-        </section>
-        <section id="alert">
-            <p>Ingrese un <b>Email</b> válido</p>
-        </section>
-        <section id="section-weather-result">
-            <!-- Sección donde se debe mostrar el clima de la ciudad -->
         </section>
     </main>
     <footer>
@@ -61,6 +56,7 @@
             Desarrollado con ♥ - LC2
         </p>
     </footer>
+    <script src="/JS/pages/help.js"></script>
 </body>
 
 </html>
